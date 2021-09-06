@@ -9,7 +9,7 @@
 " iTerm2 and default terminal app) by setting the L/R Option keys to use
 " `Esc+` instead of the default `Normal` mode.
 
-if exists("g:vim_map_alt_linux")
+if exists("g:vim_map_alt_linux") && g:vim_map_alt_linux
   " To use `ALT+{h,j,k,l}` to navigate windows from any mode.
   tnoremap <A-h> <C-\><C-N><C-w>h
   tnoremap <A-j> <C-\><C-N><C-w>j
@@ -25,7 +25,7 @@ if exists("g:vim_map_alt_linux")
   nnoremap <A-l> <C-w>l
 endif
 
-if exists("g:vim_map_alt_mac")
+if exists("g:vim_map_alt_mac") && g:vim_map_alt_mac
   " To use `ALT+{h,j,k,l}` to navigate windows from any mode.
   tnoremap ˙ <C-\><C-N><C-w>h
   tnoremap ∆ <C-\><C-N><C-w>j
